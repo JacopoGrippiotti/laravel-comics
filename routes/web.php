@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', function() {
+    
+
+    $data = [
+        'logoImage' => "resources/img/dc-logo.png",
+    
+    ];
+    return view('partials.header', $data);
+});
